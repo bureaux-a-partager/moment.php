@@ -1097,7 +1097,7 @@ class Moment extends \DateTime
     {
         $dateTime = $this->isMoment($dateTime) ? $dateTime : new Moment($dateTime);
 
-        return (bool)($this->toUTC()->startOf($period)->getTimestamp() === $dateTime->toUTC()->startOf($period)->getTimestamp());
+        return (bool)($this->startOf($period)->getTimestamp() === $dateTime->startOf($period)->getTimestamp());
     }
 
     /**
@@ -1113,7 +1113,7 @@ class Moment extends \DateTime
     {
         $dateTime = $this->isMoment($dateTime) ? $dateTime : new Moment($dateTime);
 
-        return (bool)($this->toUTC()->startOf($period)->getTimestamp() < $dateTime->toUTC()->startOf($period)->getTimestamp());
+        return (bool)($this->startOf($period)->getTimestamp() < $dateTime->startOf($period)->getTimestamp());
     }
 
     /**
