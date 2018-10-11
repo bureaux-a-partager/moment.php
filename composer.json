@@ -1,6 +1,6 @@
 {
     "name": "bureaux-a-partager/moment",
-    "description": "Parse, validate, manipulate, and display dates in PHP w/ i18n support. Inspired by moment.js",
+    "description": "Bureaux A Partager Edit - Parse, validate, manipulate, and display dates in PHP w/ i18n support. Inspired by moment.js",
     "type": "library",
     "keywords": [
         "date",
